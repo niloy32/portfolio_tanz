@@ -37,7 +37,7 @@ function HomePage() {
           <div>
             <h1 className="headerText">Education</h1>
             {/* <AnimatedCard /> */}
-            <EducationBanner />
+            {/* <EducationBanner /> */}
           </div>
 
           {/* Education END */}
