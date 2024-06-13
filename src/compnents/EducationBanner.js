@@ -12,7 +12,7 @@ function ImageAndTextExample() {
               style={{
                 height: "10rem", // Adjusts height automatically to maintain aspect ratio
                 width: "100%", // Ensures the image takes up the full width of the container
-                padding: "10px", // Maintains padding around the image
+                padding: "10px",
               }}
             />
 

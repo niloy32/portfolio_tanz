@@ -11,7 +11,7 @@ export default function IntroText() {
         }}
         initial={{ opacity: 0, y: 200 }} // Start with opacity at 0 and slightly lower position
         animate={{ opacity: 1, y: 0 }} // Animate to full opacity and move to original position
-        transition={{ duration: 2 }} // Animation duration is 0.8 seconds
+        transition={{ duration: 2 }}
       >
         Final-semester CyberSecurity and Computer Forensics student at Lambton
         College, equipped with nearly two years of hands-on software development
