@@ -3,41 +3,44 @@ import Card from "react-bootstrap/Card";
 function ImageAndTextExample() {
   return (
     <>
-      {schools.map((school, index) => (
-        <div className="banner">
-          <Card key={schools[index].id} className="bg-dark text-white m-2">
-            <Card.Img
-              variant="top"
-              src={school.imageUrl}
-              style={{
-                height: "10rem", // Adjusts height automatically to maintain aspect ratio
-                width: "100%", // Ensures the image takes up the full width of the container
-                padding: "10px",
-              }}
-            />
+      <div className="cards-container"> {/* Added a container */}
+        {schools.map((school, index) => (
+          <div className="banner" key={schools[index].id} style={{ width: '600px', height: '400px', overflow: 'hidden' }}>
+            <Card className="bg-dark text-white m-2" style={{ width: '100%', height: '100%' }}>
 
-            <Card.Body>
-              <Card.Header
+              <Card.Img
+                variant="top"
+                src={school.imageUrl}
                 style={{
-                  fontSize: "0.8rem",
+                  width: '100%',
+                  height: '50%',
+                  objectFit: 'cover',
+                  padding: "10px"
                 }}
-              >
-                {school.details}
-              </Card.Header>
-              <Card.Text
-                style={{
-                  fontSize: "1rem",
-                  letterSpacing: "2px",
-                }}
-              >
-                {school.year}
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <div style={{ height: ".2rem" }} />
-        </div>
-      ))}
-      <br />
+              />
+
+              <Card.Body style={{ overflowY: 'auto' }}>
+                <Card.Header
+                  style={{
+                    fontSize: "0.8rem",
+                  }}
+                >
+                  {school.details}
+                </Card.Header>
+                <Card.Text
+                  style={{
+                    fontSize: "1rem",
+                    letterSpacing: "2px",
+                  }}
+                >
+                  {school.year}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
+        ))}
+        <br />
+      </div>
     </>
   );
 }
