@@ -9,7 +9,7 @@ export default function IntroText() {
           textAlign: "center",
           fontSize: "25px",
         }}
-        initial={{ opacity: 0, y: 200 }} // Start with opacity at 0 and slightly lower position
+        initial={{ opacity: 0, y: 200 }} // Start with opacity at 1 and slightly lower position
         animate={{ opacity: 1, y: 0 }} // Animate to full opacity and move to original position
         transition={{ duration: 2 }}
       >
