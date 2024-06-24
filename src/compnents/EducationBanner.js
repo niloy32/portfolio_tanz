@@ -3,23 +3,31 @@ import Card from "react-bootstrap/Card";
 function ImageAndTextExample() {
   return (
     <>
-      <div className="cards-container"> {/* Added a container */}
+      <div className="cards-container">
+        {" "}
+        {/* Added a container */}
         {schools.map((school, index) => (
-          <div className="banner" key={schools[index].id} style={{ width: '600px', height: '400px', overflow: 'hidden' }}>
-            <Card className="bg-dark text-white m-2" style={{ width: '100%', height: '100%' }}>
-
+          <div
+            className="banner"
+            key={schools[index].id}
+            style={{ width: "600px", height: "400px", overflow: "hidden" }}
+          >
+            <Card
+              className="bg-dark text-white m-2"
+              style={{ width: "100%", height: "100%" }}
+            >
               <Card.Img
                 variant="top"
                 src={school.imageUrl}
                 style={{
-                  width: '100%',
-                  height: '50%',
-                  objectFit: 'cover',
-                  padding: "10px"
+                  width: "100%",
+                  height: "50%",
+                  objectFit: "cover",
+                  padding: "10px",
                 }}
               />
-
-              <Card.Body style={{ overflowY: 'auto' }}>
+              {/* Card BOdy */}
+              <Card.Body style={{ overflowY: "auto" }}>
                 <Card.Header
                   style={{
                     fontSize: "0.8rem",
