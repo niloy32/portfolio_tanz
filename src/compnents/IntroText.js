@@ -13,12 +13,12 @@ export default function IntroText() {
         animate={{ opacity: 1, y: 0 }} // Animate to full opacity and move to original position
         transition={{ duration: 2 }}
       >
-        Final-semester CyberSecurity and Computer Forensics student at Lambton
-        College, equipped with nearly two years of hands-on software development
-        experience specializing in mobile and web-based applications.
-        Transitioning into the cybersecurity field, background has been
-        supplemented with extensive practical knowledge gained through industry
-        experience and achievement of key Cybersecurity certifications.
+        Certified Cybersecurity Analyst with 3 years of experience in
+        cybersecurity and software development. Skilled in managing IT assets,
+        conducting system audits, and integrating security into the software
+        development lifecycle (SDLC). Proven track record of working on multiple
+        web applications as a developer and security engineer, ensuring robust
+        and secure solutions.
       </motion.p>
     </div>
   );
