@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import IntroText from "../compnents/IntroText";
 import AnimatedCard from "../compnents/AnimatedCard";
 import EducationBanner from "../compnents/EducationBanner";
+import WorkExperienceBanner from "../compnents/WorkExperienceBanner";
 function HomePage() {
   const { Header, Footer, Content } = Layout;
 
@@ -39,8 +40,15 @@ function HomePage() {
             {/* <AnimatedCard /> */}
             <EducationBanner />
           </div>
-
           {/* Education END */}
+
+          {/* Experiences Start */}
+          <div>
+            <h1 className="headerText">Experiences</h1>
+            {/* <AnimatedCard /> */}
+            <WorkExperienceBanner />
+          </div>
+          {/* Experiences END */}
         </Content>
         <Footer>Footer</Footer>
       </Layout>

@@ -1,25 +1,37 @@
 import Card from "react-bootstrap/Card";
 
-function ImageAndTextExample() {
+function WorkExperienceBanner() {
   return (
     <>
       <div className="cards-container">
         {" "}
         {/* Added a container */}
-        {workPlaces.map((school, index) => (
-          <div className="banner" key={workPlaces[index].id}>
+        {schools.map((school, index) => (
+          <div
+            className="banner"
+            key={schools[index].id}
+            style={{
+              width: "600px",
+              height: "400px",
+              overflow: "hidden",
+              marginInline: "10px",
+            }}
+          >
             <Card
-              className="text-white m-2 "
+              className="bg-dark text-white m-2"
               style={{
                 width: "100%",
                 height: "100%",
-                backgroundColor: "rgb(8 37 47))",
               }}
             >
               <Card.Img
                 variant="top"
                 src={school.imageUrl}
-                className="schoolImage"
+                style={{
+                  objectFit: "contain",
+                  padding: "15px",
+                  height: "200px",
+                }}
               />
               {/* Card BOdy */}
               <Card.Body style={{ overflowY: "auto" }}>
@@ -28,9 +40,16 @@ function ImageAndTextExample() {
                     fontSize: "1rem",
                   }}
                 >
-                  {school.details}
+                  {school.program} in {school.details}
                 </Card.Header>
-                <Card.Text>{school.year}</Card.Text>
+                <Card.Text
+                  style={{
+                    fontSize: "1.5rem",
+                    letterSpacing: "2px",
+                  }}
+                >
+                  {school.year}
+                </Card.Text>
               </Card.Body>
             </Card>
           </div>
@@ -41,17 +60,17 @@ function ImageAndTextExample() {
   );
 }
 
-export default ImageAndTextExample;
+export default WorkExperienceBanner;
 
-const workPlaces = [
+const schools = [
   {
     id: 1,
-    name: "Lambton College",
+    name: "Intact Financial",
     program: "Postgraduate Certificate",
-    year: "2023 - 2024",
-    details: "Cyber Security And Computer Forensics",
+    year: "2024 - Present",
+    details: "Cyber Threat Intelligence (CTI)",
     imageUrl:
-      "https://www.digitary.net/wp-content/uploads/2021/04/Lambton-College-Logo.png",
+      "https://www.multivu.com/players/English/9155351-intact-financial-2022-social-impact-esg-report/image/intactlogo_1682094355963-HR.png",
   },
   {
     id: 2,
