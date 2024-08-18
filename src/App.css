@@ -110,9 +110,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 33vh;
-  width: 33vh;
-  margin-inline: 10px;
+  height: 100%;
+  width: 25%;
+  margin: 5px;
 }
 .schoolImage {
   height: 100px;
@@ -120,9 +120,18 @@
   padding: 10px;
 }
 
+.CardCustom {
+  background-color: red;
+}
 .cards-container {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically (optional, depending on your layout) */
   flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
+}
+
+.CardDescription {
+  font-size: 2vh;
+  text-align: left;
+  font-family: system-ui;
 }
